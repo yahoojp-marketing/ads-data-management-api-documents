@@ -1,6 +1,6 @@
 # Conversion API
 
-Yahoo! Display Ads Conversion API
+Yahoo! JAPAN Ads Display Ads Conversion API
 
 ## Specification
 
