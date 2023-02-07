@@ -110,3 +110,9 @@ By using the proper configurations of firing triggers and trigger exceptions, ma
   
 DO NOT share Application ID (Client ID) with others.  
 Please use fixed values when setting tags to prevent information from being shared unintentionally.
+
+
+## Contact
+
+Please refer to the following.  
+https://ads-promo.yahoo.co.jp/support/contact/

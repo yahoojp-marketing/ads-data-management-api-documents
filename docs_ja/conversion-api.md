@@ -92,3 +92,9 @@ https://ads-cv.yahooapis.jp/v1/
   }
 }
 ```
+
+
+## お問い合わせ
+
+お問い合わせについてはこちらをご参照下さい。  
+https://ads-promo.yahoo.co.jp/support/contact/
