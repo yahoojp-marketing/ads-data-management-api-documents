@@ -56,7 +56,8 @@ Yahoo!広告 ConversionAPIタグ では サーバーサイドGoogleタグマネ�
 
 ### セットアップ3: 動作確認
 
-「プレビュー」ボタンからサーバーサイドGoogleタグマネージャーのプレビュー機能を用いて動作確認を実施してください。  
+ワークスペースの「プレビュー」ボタンからサーバーサイドGoogleタグマネージャーのプレビュー機能を用いて動作確認を実施してください。  
+プレビューについては [こちら](https://developers.google.com/tag-platform/tag-manager/server-side/debug) をご確認ください。  
 以下の点をご確認いただくとスムーズに動作確認が実施可能です。
 
 1. Tagsタブの「Tags Fired」に「Yahoo!広告 ConversionAPIタグ」を利用したタグが存在する

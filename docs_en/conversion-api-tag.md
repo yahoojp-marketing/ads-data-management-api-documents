@@ -56,7 +56,8 @@ This section covers how to set parameters and firing triggers for Yahoo! JAPAN A
 
 ### Configuration 3: Testing
 
-Select "Preview" button to test tags using the preview feature on Server-side Google Tag Manager. 
+Select "Preview" button on the workspace to test tags using the preview feature on Server-side Google Tag Manager.  
+Please refer to the [documentation](https://developers.google.com/tag-platform/tag-manager/server-side/debug) for preview feature.  
 To make the testing process easier, check the following.
 
 1. Make sure the tag configurations for "Yahoo!広告 ConversionAPIタグ" exists in "Tags Fired".
