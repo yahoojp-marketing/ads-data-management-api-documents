@@ -72,16 +72,17 @@ https://ads-cv.yahooapis.jp/v1/
 
 ##### Failure
 
-| Response Code | Common causes                                                          |
-|----------|----------------------------------------------------------------|
-| 400      | Occurs when the request is invalid. Common causes include when the body can not be interpreted as JSON or when inputs are invalid.|
-| 401      | Occurs when Application ID is not properly set.                             |
-| 403      | Occurs when the number of request reaches its designated limit per Application ID. Currently, we put limits on API requests with around 500+ requests per second.                   |
-| 404      | Occurs when the request path is invalid.                                         |
-| 405      | Occurs when the request method is not POST.                               |
-| 415      | Occurs when the input for Content-Type is invalid.                                |
-| 500      | Occurs when internal errors happen. Try calling the api again.                             |
-| 503      | Occurs when the API is not available due to maintenance and other reasons.                               |
+| Response Code | Common causes                                                                                                                                                     |
+|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 400           | Occurs when the request is invalid. Common causes include when the body can not be interpreted as JSON or when inputs are invalid.                                |
+| 401           | Occurs when Application ID is not properly set.                                                                                                                   |
+| 403           | Occurs when Application ID is invalid.                                                                                                                            |
+| 404           | Occurs when the request path is invalid.                                                                                                                          |
+| 405           | Occurs when the request method is not POST.                                                                                                                       |
+| 415           | Occurs when the input for Content-Type is invalid.                                                                                                                |
+| 429           | Occurs when the number of request reaches its designated limit per Application ID. Currently, we put limits on API requests with around 500+ requests per second. |
+| 500           | Occurs when internal errors happen. Try calling the api again.                                                                                                    |
+| 503           | Occurs when the API is not available due to maintenance and other reasons.                                                                                        |
 
 Some error responses may contain further details. Most will be returned in the following format.
 
