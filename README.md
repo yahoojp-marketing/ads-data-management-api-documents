@@ -5,7 +5,7 @@
 Yahoo!広告 データ管理APIのドキュメントです。
 
 - [Conversion API](/docs_ja/conversion-api.md)
-- [ConversionAPIタグ (サーバーサイドGoogleタグマネージャー用)](/docs_ja/conversion-api-tag.md)
+- [Conversion APIタグ (サーバーサイドGoogleタグマネージャー用)](/docs_ja/conversion-api-tag.md)
 
 ## English
 
