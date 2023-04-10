@@ -99,6 +99,11 @@ ConversionAPI の詳細については [こちらのドキュメント](./conver
 
 ## 注意点
 
+### ConversionAPI と同様の制限を受けます
+
+本タグは ConversionAPI を経由してリクエストを送信しているため、リクエスト数制限等は ConversionAPI に依存いたします。  
+ConversionAPI の詳細については [こちらのドキュメント](./conversion-api.md) をご参照ください。
+
 ### ConversionAPI への入力値を Google アナリティクス に送信しないでください
 
 [Google アナリティクス利用規約](https://marketingplatform.google.com/about/analytics/terms/jp/) において、個人情報として使用または認識できる情報を送信することを禁止しています。

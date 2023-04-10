@@ -99,6 +99,11 @@ Please refer to the [API Refecrence](./conversion-api.md) for further details of
 
 ## Warnings
 
+### Subject to the same constraints as Conversion API.
+
+This tag sends requests through Conversion API, and thus it is subject to the same constraints as Conversion API (e.g., API request limit).  
+Please refer to the [API Reference](./conversion-api.md) for further details.
+
 ### DO NOT send the values of Conversion API to Google Analytics.
 
 [Google Analytics Terms of Service](https://marketingplatform.google.com/about/analytics/terms/us/) does not allow information that can be used and identified as personal information to be sent.
