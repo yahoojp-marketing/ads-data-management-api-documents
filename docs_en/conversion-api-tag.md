@@ -121,4 +121,4 @@ Please use fixed values when setting tags to prevent information from being shar
 ## Contact
 
 Please refer to the following.  
-https://ads-promo.yahoo.co.jp/support/contact/
+https://global-marketing.yahoo.co.jp/contact/

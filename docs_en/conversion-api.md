@@ -98,4 +98,4 @@ Some error responses may contain further details. Most will be returned in the f
 ## Contact
 
 Please refer to the following.  
-https://ads-promo.yahoo.co.jp/support/contact/
+https://global-marketing.yahoo.co.jp/contact/

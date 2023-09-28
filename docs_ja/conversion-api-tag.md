@@ -121,4 +121,4 @@ ConversionAPI の詳細については [こちらのドキュメント](./conver
 ## お問い合わせ
 
 お問い合わせについてはこちらをご参照下さい。  
-https://ads-promo.yahoo.co.jp/support/contact/
+https://www.lycbiz.com/jp/contact/support/yahoo-ads/
