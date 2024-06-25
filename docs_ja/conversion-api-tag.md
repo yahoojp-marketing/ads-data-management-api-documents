@@ -71,21 +71,28 @@ Yahoo!広告 ConversionAPIタグ では サーバーサイドGoogleタグマネ�
 タグ発火時、ConversionAPIへのリクエストは「セットアップ2」で入力した値が反映されます。  
 一部のパラメータではセットアップ2の入力値がない場合や無効な値の場合は、以下の表「予備入力値」の取得を試行します。
 
-| パラメータ名                        | 入力値   | 予備入力値                                 |
-|-------------------------------|-------|---------------------------------------|
+| パラメータ名                        | 入力値    | 予備入力値                                 |
+|-------------------------------|--------|---------------------------------------|
 | アプリケーションID (ClientID)         | タグ設定の値 |                                       |
 | hashed_email                  | タグ設定の値 | イベントデータの `user_data.email_address` の値 |
-| hashed_phone_number           | タグ設定の値 | イベントデータの `user_data.phone_number` の値     |
+| hashed_phone_number           | タグ設定の値 | イベントデータの `user_data.phone_number` の値  |
 | yclid                         | タグ設定の値 | Cookieの `_ycl_yjad` の値                |
 | yjr_yjad                      | タグ設定の値 | Cookieの `_yjr_yjad` の値                |
+| ifa                           | タグ設定の値 |                                       |
 | event_time                    | タグ設定の値 | 現在時刻                                  |
 | yahoo_ydn_conv_io             | タグ設定の値 |                                       |
 | yahoo_ydn_conv_label          | タグ設定の値 |                                       |
 | yahoo_ydn_conv_transaction_id | タグ設定の値 |                                       |
 | yahoo_ydn_conv_value          | タグ設定の値 |                                       |
+| ip                            | タグ設定の値 | イベントデータの `ip_override` の値             |
+| user_agent                    | タグ設定の値 | イベントデータの `user_agent` の値              |
+| yjsu_yjad                     | タグ設定の値 | Cookieの `_yjsu_yjad` の値               |
+| url                           | タグ設定の値 | イベントデータの `page_location` の値           |
+| referrer                      | タグ設定の値 | イベントデータの `page_referrer` の値           |
 
-メールアドレスおよび電話番号の予備入力値である、イベントデータの `user_data.email_address` と `user_data.phone_number` の値の取得は [こちら](https://developers.google.com/tag-platform/tag-manager/server-side/send-data) の Google tag において `first_party_collection` フラグを `true` に設定する必要があります。  
-Cookieの `_ycl_yjad` および `yjr_yjad` の値の取得については [カスタムドメインの設定](https://developers.google.com/tag-platform/tag-manager/server-side/custom-domain) が必要となります。
+メールアドレスおよび電話番号の予備入力値である、イベントデータの `user_data.email_address` と `user_data.phone_number` の値の取得は [こちら](https://developers.google.com/tag-platform/tag-manager/server-side/send-data) の Google tag において `first_party_collection` フラグを `true` に設定する必要があります。
+イベントデータについては [こちら](https://developers.google.com/tag-platform/tag-manager/server-side/common-event-data) もご確認ください。
+Cookieの `_ycl_yjad`, `_yjr_yjad`, `_yjsu_yjad` の値の取得については [カスタムドメインの設定](https://developers.google.com/tag-platform/tag-manager/server-side/custom-domain) が必要となります。
 
 hashed_email および hashed_phone_number の値については以下の通りハッシュ化が実行されます。
 

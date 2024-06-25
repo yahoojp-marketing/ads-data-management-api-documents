@@ -1,5 +1,7 @@
 # Yahoo! JAPAN Ads Display Ads Conversion API Tag (for Server-side Google Tag Manager)
 
+In case there are any discrepancies between the Japanese and English references, the Japanese version shall be considered correct.
+
 The documentation shows the procedure to trigger web page conversions using Yahoo! JAPAN Ads Display Ads Conversion API Tag on the community template gallery in [Server-side Google Tag Manager](https://developers.google.com/tag-platform/tag-manager/server-side).
 
 Please refer to the [API Reference](./conversion-api.md) for further details. 
@@ -71,28 +73,35 @@ To make the testing process easier, check the following.
 When fired, requests to Conversion API are based on the values set in Configuration 2.  
 For some parameters, the system tries to retrieve values from "input(secondary)" shown in the chart below in case that no value is set or the value is invalid.
 
-| Parameter Name                        | input(primary)   | input(secondary)                               |
-|-------------------------------|-------|------------------------------------|
-| Application ID (Client ID)         | Values set in Tags  |                                    |
-| hashed_email                  | Values set in Tags  | Values of `user_data.email_address` event |
-| hashed_phone_number           | Values set in Tags  | Values of `user_data.phone_number` event |
-| yclid                         | Values set in Tags | Values of Cookie `_ycl_yjad`             |
-| yjr_yjad                      | Values set in Tags | Values of Cookie `_yjr_yjad`             |
-| event_time                    | Values set in Tags | Current Time                               |
-| yahoo_ydn_conv_io             | Values set in Tags |                                    |
-| yahoo_ydn_conv_label          | Values set in Tags |                                    |
-| yahoo_ydn_conv_transaction_id | Values set in Tags |                                    |
-| yahoo_ydn_conv_value          | Values set in Tags |                                    |
+| Parameter Name                | input(primary)     | input(secondary)                          |
+|-------------------------------|--------------------|-------------------------------------------|
+| Application ID (Client ID)    | Values set in Tags |                                           |
+| hashed_email                  | Values set in Tags | Values of `user_data.email_address` event |
+| hashed_phone_number           | Values set in Tags | Values of `user_data.phone_number` event  |
+| yclid                         | Values set in Tags | Values of Cookie `_ycl_yjad`              |
+| yjr_yjad                      | Values set in Tags | Values of Cookie `_yjr_yjad`              |
+| ifa                           | Values set in Tags |                                           |
+| event_time                    | Values set in Tags | Current Time                              |
+| yahoo_ydn_conv_io             | Values set in Tags |                                           |
+| yahoo_ydn_conv_label          | Values set in Tags |                                           |
+| yahoo_ydn_conv_transaction_id | Values set in Tags |                                           |
+| yahoo_ydn_conv_value          | Values set in Tags |                                           |
+| ip                            | Values set in Tags | Values of `ip_override` event             |
+| user_agent                    | Values set in Tags | Values of `user_agent` event              |
+| yjsu_yjad                     | Values set in Tags | Values of Cookie `_yjsu_yjad`             |
+| url                           | Values set in Tags | Values of `page_location` event           |
+| referrer                      | Values set in Tags | Values of `page_referrer` event           |
 
 To use the event data of `user_data.email_address` and `user_data.phone_number`, `first_party_collection` flag needs to be set to `true` on Google tag as described [here](https://developers.google.com/tag-platform/tag-manager/server-side/send-data).  
-[Custom domain configuration](https://developers.google.com/tag-platform/tag-manager/server-side/custom-domain) is required to retrieve the values of Cookie `_ycl_yjad` and `yjr_yjad`.
+For more information on event data, please refer to [this link](https://developers.google.com/tag-platform/tag-manager/server-side/common-event-data).
+[Custom domain configuration](https://developers.google.com/tag-platform/tag-manager/server-side/custom-domain) is required for retrieving the values of Cookie `_ycl_yjad`, `_yjr_yjad` and `_yjsu_yjad`.
 
 The values of hashed_email and hashed_phone_number will be hashed as described below.
 
-| Parameter Name                       | Note                                                                                                         |
-|-------------------------------|-------------------------------------------------------------------------------------------------------------|
-| hashed_email                  | Plain email addresses will be hashed using SHA-256. Invalid email addresses and hashed values using other than SHA-256 will be ignored.                           |
-| hashed_phone_number           | After removing `-` and replacing `+81` with `0`, phone numbers will be hashed only if they are made up of numbers. The values will be ignored if the previous conditions are not met or the values are not hashed with SHA-256. |
+| Parameter Name              | Note                                                                                                                                                                                                                            |
+|-----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| hashed_email                | Plain email addresses will be hashed using SHA-256. Invalid email addresses and hashed values using other than SHA-256 will be ignored.                                                                                         |
+| hashed_phone_number         | After removing `-` and replacing `+81` with `0`, phone numbers will be hashed only if they are made up of numbers. The values will be ignored if the previous conditions are not met or the values are not hashed with SHA-256. |
 
 Requests will be made based on the input values for Conversion API Tag. The response code 201 means the tag fires are successful.  
 Please refer to the [API Refecrence](./conversion-api.md) for further details of Conversion API.
