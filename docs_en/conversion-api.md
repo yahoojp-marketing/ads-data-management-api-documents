@@ -118,4 +118,4 @@ Some error responses may contain further details. Most will be returned in the f
 ## Contact
 
 Please refer to the following.  
-https://global-marketing.yahoo.co.jp/contact/
+https://global-marketing.yahoo-net.jp/contact

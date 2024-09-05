@@ -130,4 +130,4 @@ Please use fixed values when setting tags to prevent information from being shar
 ## Contact
 
 Please refer to the following.  
-https://global-marketing.yahoo.co.jp/contact/
+https://global-marketing.yahoo-net.jp/contact
