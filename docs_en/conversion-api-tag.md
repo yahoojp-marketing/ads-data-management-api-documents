@@ -17,13 +17,13 @@ Yahoo! JAPAN Ads Display Ads Conversion API Tag (Yahoo!広告 ConversionAPIタ�
 
 Please complete the following configurations.
 
-- Please complete your Server-side Google Tag Manager configurations by referring to sections such as "Set up server-side tagging" in the [documentation](https://developers.google.com/tag-platform/tag-manager/server-side/app-engine-configuration).
+- Please complete your Server-side Google Tag Manager configurations by referring to sections such as "Set up server-side tagging" in the [documentation](https://developers.google.com/tag-platform/tag-manager/server-side/cloud-run-setup-guide).
 - Please complete configurations for Google analytics 4 (GA4), tag configurations on web pages, and other necessary configurations by referring to the [documentation](https://developers.google.com/tag-platform/tag-manager/server-side/send-data).
 
 ### Preparation 2: Conversion API
 
 "Yahoo! JAPAN Ads Display Ads Conversion API Tag" uses Conversion API.
-Please refer to [Yahoo! JAPAN Ads Help](https://ads-help.yahoo.co.jp/yahooads/display/articledetail?lan=en&aid=64946) and the [API Reference](./conversion-api.md), and prepare the following items.
+Please refer to [Yahoo! JAPAN Ads Help](https://ads-help.yahoo-net.jp/s/article/H000044232?language=en_US) and the [API Reference](./conversion-api.md), and prepare the following items.
 - Client ID
 - Request parameters for Conversion API
 
