@@ -96,12 +96,12 @@ To use the event data of `user_data.email_address` and `user_data.phone_number`,
 For more information on event data, please refer to [this link](https://developers.google.com/tag-platform/tag-manager/server-side/common-event-data).
 [Custom domain configuration](https://developers.google.com/tag-platform/tag-manager/server-side/custom-domain) is required for retrieving the values of Cookie `_ycl_yjad`, `_yjr_yjad` and `_yjsu_yjad`.
 
-The values of hashed_email and hashed_phone_number will be hashed as described below.
+If the values of hashed_email and hashed_phone_number are not already hashed, they will be hashed as described below.
 
-| Parameter Name              | Note                                                                                                                                                                                                                            |
+| Parameter Name              | Behavior when a value other than a SHA-256 hash is input                                                              |
 |-----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| hashed_email                | Plain email addresses will be hashed using SHA-256. Invalid email addresses and hashed values using other than SHA-256 will be ignored.                                                                                         |
-| hashed_phone_number         | After removing `-` and replacing `+81` with `0`, phone numbers will be hashed only if they are made up of numbers. The values will be ignored if the previous conditions are not met or the values are not hashed with SHA-256. |
+| hashed_email                | If the input string is in a valid email address format, the string will be hashed and sent. Otherwise, it will be ignored.              |
+| hashed_phone_number         | If the input phone number contains `-`, `(`, `)`, or spaces, remove them. Also, if the phone number starts with a `0` , replace it with Japan's country code `+81` . If the resulting string is determined to be in E.164 format, the string will be hashed and sent. Otherwise, it will be ignored. |
 
 Requests will be made based on the input values for Conversion API Tag. The response code 201 means the tag fires are successful.  
 Please refer to the [API Refecrence](./conversion-api.md) for further details of Conversion API.
