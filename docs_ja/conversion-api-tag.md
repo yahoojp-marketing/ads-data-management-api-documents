@@ -1,8 +1,11 @@
 # Yahoo!広告 ConversionAPIタグ (サーバーサイドGoogleタグマネージャー用)
-
 本ドキュメントでは [サーバーサイドGoogleタグマネージャー](https://developers.google.com/tag-platform/tag-manager/server-side) のコミュニティテンプレートギャラリーから「Yahoo!広告 ConversionAPIタグ」を利用してウェブページコンバージョンを実施する手順を示します。
 
 ConversionAPI の詳細については [こちらのドキュメント](./conversion-api.md) をご参照ください。 
+
+> [!IMPORTANT]
+> Yahoo!広告のConversion APIとLINE Conversion APIを統合した、より精度の高いAPIも提供しています。新規で導入する場合は、新しいAPIのご利用をおすすめします。なお、「Yahoo!広告 ConversionAPIタグ」は今後提供終了を予定しております。提供終了時期については決まり次第お知らせいたします。  
+> 新しいコンバージョンAPIのドキュメントはこちら: https://ads-developers.yahoo.co.jp/ja/conversion-api/
 
 ## 準備
 

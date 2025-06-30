@@ -1,10 +1,13 @@
 # Yahoo! JAPAN Ads Display Ads Conversion API Tag (for Server-side Google Tag Manager)
-
 In case there are any discrepancies between the Japanese and English references, the Japanese version shall be considered correct.
 
 The documentation shows the procedure to trigger web page conversions using Yahoo! JAPAN Ads Display Ads Conversion API Tag on the community template gallery in [Server-side Google Tag Manager](https://developers.google.com/tag-platform/tag-manager/server-side).
 
 Please refer to the [API Reference](./conversion-api.md) for further details. 
+
+> [!IMPORTANT]
+> We offer a more accurate API combining the Yahoo! JAPAN Ads Conversion API and the LINE Conversion API. If you are new to using an API, we recommend using the new one. Note that we will discontinue the "Yahoo! JAPAN Ads Conversion API tag." We will update you on the discontinuation date once it has been determined.  
+> Learn more about the new conversion API: https://ads-developers.yahoo.co.jp/en/conversion-api/
 
 ## Preparations
 

@@ -1,6 +1,9 @@
 # Conversion API
-
 Yahoo!広告 ディスプレイ広告 コンバージョン計測API
+
+> [!IMPORTANT]
+> Yahoo!広告のConversion APIとLINE Conversion APIを統合した、より精度の高いAPIも提供しています。新規で導入する場合は、新しいAPIのご利用をおすすめします。なお、Yahoo!広告のConversion APIは今後提供終了を予定しております。提供終了時期については決まり次第お知らせいたします。  
+> 新しいコンバージョンAPIのドキュメントはこちら: https://ads-developers.yahoo.co.jp/ja/conversion-api/
 
 ## 仕様
 
