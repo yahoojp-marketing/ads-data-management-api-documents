@@ -1,10 +1,10 @@
 # Conversion API
-Yahoo! JAPAN Ads Display Ads Conversion API
+LY Ads Display Ads Conversion API
 
 In case there are any discrepancies between the Japanese and English references, the Japanese version shall be considered correct.
 
 > [!IMPORTANT]
-> We offer a more accurate API combining the Yahoo! JAPAN Ads Conversion API and the LINE Conversion API. If you are new to using an API, we recommend using the new one. Note that we will discontinue the Yahoo! JAPAN Ads Conversion API. We will update you on the discontinuation date once it has been determined.  
+> We offer a more accurate API combining the LY Ads Conversion API and the LINE Conversion API. If you are new to using an API, we recommend using the new one. Note that we will discontinue the LY Ads Conversion API. We will update you on the discontinuation date once it has been determined.  
 > Learn more about the new conversion API: https://ads-developers.yahoo.co.jp/en/conversion-api/
 
 ## Specification

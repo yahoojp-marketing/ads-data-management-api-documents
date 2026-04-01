@@ -1,12 +1,12 @@
-# Yahoo! JAPAN Ads Display Ads Conversion API Tag (for Server-side Google Tag Manager)
+# LY Ads Display Ads Conversion API Tag (for Server-side Google Tag Manager)
 In case there are any discrepancies between the Japanese and English references, the Japanese version shall be considered correct.
 
-The documentation shows the procedure to trigger web page conversions using Yahoo! JAPAN Ads Display Ads Conversion API Tag on the community template gallery in [Server-side Google Tag Manager](https://developers.google.com/tag-platform/tag-manager/server-side).
+The documentation shows the procedure to trigger web page conversions using LY Ads Display Ads Conversion API Tag on the community template gallery in [Server-side Google Tag Manager](https://developers.google.com/tag-platform/tag-manager/server-side).
 
 Please refer to the [API Reference](./conversion-api.md) for further details. 
 
 > [!IMPORTANT]
-> We offer a more accurate API combining the Yahoo! JAPAN Ads Conversion API and the LINE Conversion API. If you are new to using an API, we recommend using the new one. Note that we will discontinue the "Yahoo! JAPAN Ads Conversion API tag." We will update you on the discontinuation date once it has been determined.  
+> We offer a more accurate API combining the LY Ads Conversion API and the LINE Conversion API. If you are new to using an API, we recommend using the new one. Note that we will discontinue the "LY Ads Conversion API tag." We will update you on the discontinuation date once it has been determined.  
 > Learn more about the new conversion API: https://ads-developers.yahoo.co.jp/en/conversion-api/
 
 ## Preparations
@@ -16,7 +16,7 @@ Please refer to the [API Reference](./conversion-api.md) for further details.
 [Google Tag Manager](https://developers.google.com/tag-platform/tag-manager) is a tag management system offered by Google. 
 [Server-side Google Tag Manager](https://developers.google.com/tag-platform/tag-manager/server-side) allows tags to be processed in containers on platforms such as Google Cloud.
 
-Yahoo! JAPAN Ads Display Ads Conversion API Tag (Yahoo!広告 ConversionAPIタグ) enables conversion measurements for Yahoo! JAPAN Ads Display Ads by collecting conversion data sent to containers on Server-side Google Tag Manager and requesting the data to Conversion API.
+LY Ads Display Ads Conversion API Tag (LINEヤフー広告 ConversionAPIタグ) enables conversion measurements for LY Ads Display Ads by collecting conversion data sent to containers on Server-side Google Tag Manager and requesting the data to Conversion API.
 
 Please complete the following configurations.
 
@@ -25,16 +25,16 @@ Please complete the following configurations.
 
 ### Preparation 2: Conversion API
 
-"Yahoo! JAPAN Ads Display Ads Conversion API Tag" uses Conversion API.
-Please refer to [Yahoo! JAPAN Ads Help](https://ads-help.yahoo-net.jp/s/article/H000044232?language=en_US) and the [API Reference](./conversion-api.md), and prepare the following items.
+"LY Ads Display Ads Conversion API Tag" uses Conversion API.
+Please refer to [LY Ads Help](https://ads-help.yahoo-net.jp/s/article/H000044232?language=en_US) and the [API Reference](./conversion-api.md), and prepare the following items.
 - Client ID
 - Request parameters for Conversion API
 
-## Configurations: Yahoo! JAPAN Ads Display Ads Conversion API Tag
+## Configurations: LY Ads Display Ads Conversion API Tag
 
 ### Configuration 1: Variables
 
-This section shows how to define variables for input values for Yahoo! JAPAN Ads Display Ads Conversion API Tag.   
+This section shows how to define variables for input values for LY Ads Display Ads Conversion API Tag.   
 Please refer to the [documentation](https://support.google.com/tagmanager/topic/7683268) for Variables configuration.
 
 The following is the example for registering the value of quary parameter `buy_time` as the variable `cv_event_time`.
@@ -47,12 +47,12 @@ The following is the example for registering the value of quary parameter `buy_t
 
 ### Configuration 2: Tags
 
-This section covers how to set parameters and firing triggers for Yahoo! JAPAN Ads Display Ads Conversion API Tag.
+This section covers how to set parameters and firing triggers for LY Ads Display Ads Conversion API Tag.
 
 1. Open workspace of the containers for setting tags on Server-Side Google Tag Manager.
 2. Select "Tags" on the side menu and open the configuration for new tags by clicking "New".
 3. Select "Tag Configuration" and then click "Discover more tag types in the Community Template Gallery".
-4. Choose "Yahoo!広告 ConversionAPIタグ" on the list.
+4. Choose "LINEヤフー広告 ConversionAPIタグ" on the list.
 5. Set each parameter in fixed values or variables for requesting Conversion API.
    - Input Client ID from "Preparation 2" as a fixed value for "Application ID (Client ID)".
    - Set other parameters in fixed values or variables as needed.
@@ -65,13 +65,13 @@ Select "Preview" button on the workspace to test tags using the preview feature 
 Please refer to the [documentation](https://developers.google.com/tag-platform/tag-manager/server-side/debug) for preview feature.  
 To make the testing process easier, check the following.
 
-1. Make sure the tag configurations for "Yahoo!広告 ConversionAPIタグ" exists in "Tags Fired".
+1. Make sure the tag configurations for "LINEヤフー広告 ConversionAPIタグ" exists in "Tags Fired".
 2. Check the following after selecting "Outgoing HTTP Requests from Server" in "Tag Details" shown when "Tags Fired" is selected.
    - Requests with expected parameters have been sent to Conversion API.
    - Response code is 201.
 3. Logs in the console tab contain `success: {.....}`.
 
-## About how Yahoo! JAPAN Ads Display Ads Conversion API Tag works
+## About how LY Ads Display Ads Conversion API Tag works
  
 When fired, requests to Conversion API are based on the values set in Configuration 2.  
 For some parameters, the system tries to retrieve values from "input(secondary)" shown in the chart below in case that no value is set or the value is invalid.
